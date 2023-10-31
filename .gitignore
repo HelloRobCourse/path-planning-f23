@@ -1,0 +1,16 @@
+# Python
+*.pyc
+__pycache__/
+
+# C / CPP
+*.o
+*.a
+
+# VSCode
+.vscode/
+
+# Replit
+.ccls-cache/
+
+# Planning output.
+*.planner
