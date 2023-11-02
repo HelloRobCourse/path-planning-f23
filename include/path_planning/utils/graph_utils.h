@@ -14,23 +14,14 @@ struct Cell
 };
 
 
-struct CellNode
-{
-    CellNode() :
-        i(-1),
-        j(-1),
-        parent(-1),
-        distance(HIGH),
-        f_score(HIGH),
-        visited(false)
-    {};
-
-    int i, j;
-    int parent;
-    bool visited;
-    float distance;
-    float f_score;
-};
+/**
+ * TODO (P3): Define a CellNode struct to store information you need for path
+ * planning.
+ *
+ * You will need to know the index of the cell in the graph (row and column).
+ * You can define more members to keep track of whether your cell has been
+ * visited, its parent, its cost, etc.
+ */
 
 
 struct GridGraph
@@ -57,7 +48,10 @@ struct GridGraph
 
     std::vector<Cell> visited_cells;        // A list of visited cells. Used for visualization.
 
-    std::vector<CellNode> nodes;            // The nodes corresponding to each cell.
+    /**
+     * TODO (P3): Define the structures you need to store node data in the graph.
+     * Use the type defined above.
+     */
 };
 
 
