@@ -46,7 +46,7 @@ int main(int argc, char const *argv[])
         return -1;
     }
 
-    Cell start = posToCell(pose[0], pose[2], graph);
+    Cell start = posToCell(pose[0], pose[1], graph);
 
     std::vector<Cell> path;
     // TODO: Call graph search function and put the result in path.
